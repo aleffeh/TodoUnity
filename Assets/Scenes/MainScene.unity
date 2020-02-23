@@ -230,10 +230,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46fb11bd19bb4b94b0ad9e74ac41a4bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _canvas: {fileID: 1526950279}
-  _prefabDialog: {fileID: 1514341168715363450, guid: 6edbbd3817ea34e4fa66f3f4742f28a0,
+  canvas: {fileID: 1526950279}
+  prefabDialog: {fileID: 1514341168715363450, guid: 6edbbd3817ea34e4fa66f3f4742f28a0,
     type: 3}
-  _addButton: {fileID: 1212062320}
+  addButton: {fileID: 1212062320}
+  contentView: {fileID: 1305335180}
+  itemPrefab: {fileID: 2439755170869072294, guid: 804111ac726fd6f4195fd6ff47980d45,
+    type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,10 +441,10 @@ RectTransform:
   m_Father: {fileID: 1802468937}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 809.1, y: 0.000015258789}
-  m_SizeDelta: {x: 89.77, y: 89.77}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -150.90015, y: 0}
+  m_SizeDelta: {x: 89.77002, y: 89.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1212062320
 MonoBehaviour:
@@ -793,10 +796,10 @@ RectTransform:
   m_Father: {fileID: 1526950283}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0.9127971}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 233}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1802468938
 MonoBehaviour:
@@ -816,7 +819,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
