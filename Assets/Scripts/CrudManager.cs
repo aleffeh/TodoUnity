@@ -22,7 +22,11 @@ public class CrudManager : MonoBehaviour
         Screen.fullScreen = false;
         _dialogController = DialogController.NewInputDialog(canvas, prefabDialog, "NOVO REGISTRO", AddData,
             () => { });
-        addButton.onClick.AddListener(() => _dialogController.Show());
+        addButton.onClick.AddListener(() =>
+        {
+            _dialogController.Text = "";
+            _dialogController.Show();
+        });
 
         _repository = new TodoRepository();
         LoadData();
